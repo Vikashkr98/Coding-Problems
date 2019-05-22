@@ -1,0 +1,34 @@
+
+/* An Example Program to Implement call by value using c. */
+
+#include<stdio.h>
+void sum(int, int);
+void main(){
+  int a,b;
+  printf("Enter the value of a and b: ");
+  scanf("%d %d",&a,&b);
+  sum(a,b);
+  printf(" \nvalue of a and b is %d %d",a,b);
+  }
+void sum(int p, int q){
+  int sum = p+q;
+  printf("\nsum value of a and b is : %d",sum);
+}
+
+
+/* An Example Program to Implement call by value using c++. */
+
+#include<iostream>
+using namespace std;
+void sum(int p, int q){
+  int sum = p+q;
+  cout<<"sum value of a and b is: "<<sum<<endl;
+}
+int main(){
+  int a,b;
+  cout<<"Enter the value of a and b: "<<endl;
+  cin>>a>>b;
+  sum(a,b);
+  cout<<"value of a and b is "<<a<<" " <<b<<endl;
+  return 0;
+  }
