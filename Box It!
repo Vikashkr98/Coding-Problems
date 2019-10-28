@@ -58,7 +58,7 @@ class Box{
         long long CalculateVolume(){
             return (long long )l*b*h;
         }
-        bool operator<(const Box &B)
+        bool operator <(const Box &B)
         {
             int ll = B.l;
             int bb = B.b;
@@ -70,7 +70,7 @@ class Box{
         }
 };
 
-ostream& operator<<(ostream& out, Box B)
+ostream& operator <<(ostream& out, Box B)
 {
     int l=B.getLength();
     int b=B.getBreath();
